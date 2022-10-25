@@ -28,6 +28,8 @@
     line-height: 59px;
     color: #464748;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .banner__p {
@@ -42,4 +44,15 @@
 
 .banner__btn {
     padding: 6px 62px;
+}
+.banner__h::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100px;
+    height: 52px;
+    background: #3FA5D5;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
